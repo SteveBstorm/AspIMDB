@@ -8,3 +8,9 @@ C:\Users\papa\source\repos\CorrectifIMDB\MovieDB\obj\Debug\postdeploy.sql
 C:\Users\papa\source\repos\CorrectifIMDB\MovieDB\obj\Debug\predeploy.sql
 C:\Users\papa\source\repos\CorrectifIMDB\MovieDB\obj\Debug\MovieDB.dll
 C:\Users\papa\source\repos\CorrectifIMDB\MovieDB\obj\Debug\MovieDB.pdb
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\bin\Debug\MovieDB.dacpac
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\bin\Debug\MovieDB.dll
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\bin\Debug\MovieDB.pdb
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\obj\Debug\MovieDB.sqlprojAssemblyReference.cache
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\obj\Debug\MovieDB.dll
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\MovieDB\obj\Debug\MovieDB.pdb

@@ -6,6 +6,6 @@
     [ReleaseYear] INT NOT NULL, 
     [RealisatorID] INT NULL, 
     [ScenaristID] INT NULL
-    CONSTRAINT FK_Realistor FOREIGN KEY (RealisatorID) REFERENCES Person(Id),
-    CONSTRAINT FK_Scenarist FOREIGN KEY (ScenaristID) REFERENCES Person(Id)
+    CONSTRAINT FK_Realistor FOREIGN KEY (RealisatorID) REFERENCES Person(Id) ON UPDATE CASCADE ON DELETE SET NULL,
+    CONSTRAINT FK_Scenarist FOREIGN KEY (ScenaristID) REFERENCES Person(Id) ON UPDATE CASCADE ON DELETE SET NULL
 )

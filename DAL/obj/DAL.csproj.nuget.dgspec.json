@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\papa\\source\\repos\\CorrectifIMDB\\DAL\\DAL.csproj": {}
+    "C:\\Users\\Steve\\source\\Correctifs\\CorrectifIMDB\\AspIMDB\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\papa\\source\\repos\\CorrectifIMDB\\DAL\\DAL.csproj": {
+    "C:\\Users\\Steve\\source\\Correctifs\\CorrectifIMDB\\AspIMDB\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\papa\\source\\repos\\CorrectifIMDB\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Steve\\source\\Correctifs\\CorrectifIMDB\\AspIMDB\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\papa\\source\\repos\\CorrectifIMDB\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\papa\\source\\repos\\CorrectifIMDB\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\Steve\\source\\Correctifs\\CorrectifIMDB\\AspIMDB\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Steve\\source\\Correctifs\\CorrectifIMDB\\AspIMDB\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\papa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -42,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
@@ -62,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

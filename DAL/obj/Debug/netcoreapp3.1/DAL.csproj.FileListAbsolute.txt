@@ -7,3 +7,12 @@ C:\Users\papa\source\repos\CorrectifIMDB\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
 C:\Users\papa\source\repos\CorrectifIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
 C:\Users\papa\source\repos\CorrectifIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 C:\Users\papa\source\repos\CorrectifIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Steve\source\Correctifs\CorrectifIMDB\AspIMDB\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
