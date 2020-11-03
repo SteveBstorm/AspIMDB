@@ -10,7 +10,7 @@ namespace DAL.Repository
 {
     public class MovieRepo : BaseRepository, IMovieRepository<Movie>
     {
-        public MovieRepo() : base()
+        public MovieRepo()
         {
         }
 
@@ -45,11 +45,12 @@ namespace DAL.Repository
 
         public IEnumerable<Movie> GetAll()
         {
-            using (SqlConnection c = base.Connection())
+            using (SqlConnection c = Connection())
             {
+                c.Open();
                 using (SqlCommand cmd = c.CreateCommand())
                 {
-                    c.Open();
+                    
                     cmd.CommandText = "SELECT * FROM Movie";
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -72,7 +73,31 @@ namespace DAL.Repository
 
         public Movie GetOne(int Id)
         {
-            throw new NotImplementedException();
+            Movie m = new Movie();
+            using (SqlConnection c = Connection())
+            {
+                c.Open();
+                using (SqlCommand cmd = c.CreateCommand())
+                {
+
+                    cmd.CommandText = "SELECT * FROM Movie WHERE Id = @id";
+                    cmd.Parameters.AddWithValue("id", Id);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            m.Id = (int)reader["Id"];
+                            m.Title = reader["Title"].ToString();
+                            m.Description = reader["Description"].ToString();
+                            m.ReleaseYear = (int)reader["ReleaseYear"];
+                            m.RealisatorID = (int)reader["RealisatorID"];
+                            m.ScenaristID = (int)reader["ScenaristID"];
+                         
+                        }
+                    }
+                }
+            return m;
+            }
         }
 
         public void Insert(Movie c)
@@ -83,6 +108,66 @@ namespace DAL.Repository
         public void Update(Movie c)
         {
             throw new NotImplementedException();
+        }
+
+       
+
+        public IEnumerable<Movie> GetByRealisatorId(int Id)
+        {
+            using (SqlConnection c = Connection())
+            {
+                c.Open();
+                using (SqlCommand cmd = c.CreateCommand())
+                {
+
+                    cmd.CommandText = $"SELECT * FROM Movie WHERE RealisatorID = @id";
+                    cmd.Parameters.AddWithValue("id", Id);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yield return new Movie
+                            {
+                                Id = (int)reader["Id"],
+                                Title = reader["Title"].ToString(),
+                                Description = reader["Description"].ToString(),
+                                ReleaseYear = (int)reader["ReleaseYear"],
+                                RealisatorID = (int)reader["RealisatorID"],
+                                ScenaristID = (int)reader["ScenaristID"],
+                            };
+                        }
+                    }
+                }
+            }
+        }
+
+        public IEnumerable<Movie> GetByScenaristId(int Id)
+        {
+            using (SqlConnection c = Connection())
+            {
+                c.Open();
+                using (SqlCommand cmd = c.CreateCommand())
+                {
+
+                    cmd.CommandText = $"SELECT * FROM Movie WHERE ScenaristID = @id";
+                    cmd.Parameters.AddWithValue("id", Id);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yield return new Movie
+                            {
+                                Id = (int)reader["Id"],
+                                Title = reader["Title"].ToString(),
+                                Description = reader["Description"].ToString(),
+                                ReleaseYear = (int)reader["ReleaseYear"],
+                                RealisatorID = (int)reader["RealisatorID"],
+                                ScenaristID = (int)reader["ScenaristID"],
+                            };
+                        }
+                    }
+                }
+            }
         }
     }
 }

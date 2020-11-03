@@ -21,7 +21,27 @@ namespace DAL.Repository
 
         public IEnumerable<Person> GetAll()
         {
-            throw new NotImplementedException();
+            using (SqlConnection c = Connection())
+            {
+                c.Open();
+                using (SqlCommand cmd = c.CreateCommand())
+                {
+
+                    cmd.CommandText = "SELECT * FROM Person";
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yield return new Person
+                            {
+                                Id = (int)reader["Id"],
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
         }
 
         public Person GetOne(int Id)
